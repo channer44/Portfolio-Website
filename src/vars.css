@@ -1,0 +1,10 @@
+:root {
+    --color-text: #252525;
+    --color-primary: #576cbc;
+    --color-secondary: #19376d;
+    --color-dark: #0b2447;
+    --color-roboto: "Roboto";
+    --background-color: #fff;
+    --button-border: #576cbc;
+    --button-background: #fff;
+  }

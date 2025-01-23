@@ -1,0 +1,27 @@
+@import "./../../index.css";
+
+.container {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-left: 10%;
+    z-index: 1;
+    outline: 1px solid red;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-family: var(--font-roboto);
+    text-align: center;
+    padding-top: 5%;
+}

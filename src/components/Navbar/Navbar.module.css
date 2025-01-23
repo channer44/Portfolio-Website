@@ -1,0 +1,84 @@
+@import "./../../index.css";
+
+li:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 16px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.menuItems {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuItems a {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 830px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 2;
+    }
+
+    .navButton {
+        display: block;
+        cursor: pointer;
+        margin-right: 24px;
+    }
+
+    .menuItems {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 11px;
+        padding: 8px 8px;
+        background-color: black;
+    }
+
+    .menuOpen {
+        display: flex;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 831px) {
+    .navButton {
+        display: none;
+    }
+}

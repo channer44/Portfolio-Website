@@ -1,0 +1,58 @@
+@import "./../../index.css";
+
+li:hover {
+  cursor: default;
+}
+
+.container {
+  position: relative;
+  align-items: center;
+  margin: 50px auto 0;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  font-weight: 100;
+  font-family: var(--font-roboto);
+  text-align: center;
+  padding-top: clamp(1rem, 3vw, 2.5rem);
+}
+
+.technologies {
+  background: linear-gradient(to right, #5089be 30%, #818dce 50%, #a855f7 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 300;
+  text-align: center;
+}
+
+.iconGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 16px);
+  margin: clamp(0.625rem, 2vw, 1.25rem) 0;
+}
+
+.iconBorder {
+  border-radius: 10px;
+  padding: clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 50px);
+  transition: all 0.3s ease-in-out;
+  background: #262626;
+  border: 3px solid #262626;
+}
+
+.iconBorder:hover {
+  border-color: #555555;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    padding:clamp(10px, 2vw, 15px);
+  }
+}
