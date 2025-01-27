@@ -59,9 +59,11 @@ export const Intro = () => {
               animate = "visible"><CiMail color = "white" size = "88"/></motion.a>
           </div>
         </div>
+      {/*
       <img className = {styles.introImg} 
         src = {image}
         alt = "Picture of me"></img>
+      */}
         </div>
     </section>
   )
