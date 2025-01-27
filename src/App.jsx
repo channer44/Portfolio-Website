@@ -21,9 +21,11 @@ function App() {
     <div className={`${styles.app} ${isLightMode ? styles.light : ''}`}>
       <div className={`${styles.background} ${isLightMode ? styles.light : ''}`}></div>
       <Navbar />
+      {/*
       <button onClick={toggleLightMode} className={styles.toggleButton}>
         {isLightMode ? <FiMoon size = "32" /> : <MdOutlineWbSunny size = "32" />}
       </button>
+      */}
       <Intro />
       <div id="education">
         <Education />
