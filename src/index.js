@@ -17,7 +17,8 @@ export const EDUCATION = [
     degree: "Bachelor of Science in Computer Science",
     coursework: "Relevant Coursework: Programming Fundamentals 1 (Python), Programming Fundamentals 2 (C++), \
     Introduction to Computer Organization (ARM), Data Structures and Algorithms (C++), Internet Network Technologies (JavaScript), \
-    Introduction to Software Engineering (Javascript, HTML, CSS)",
+    Introduction to Software Engineering (Javascript, HTML, CSS), Information and Database Systems 1 (SQL, MariaDB), Intro to Machine Learning \
+    (Python, NumPy, Scikit, Tensorflow)", 
     date: "January 2023 - December 2025",
     location: "Gainesville, FL",
     image: UF
@@ -35,6 +36,20 @@ export const EDUCATION = [
 
 export const PROJECTS = [
   {
+    title: "Computer Vision Basketball Tracking System",
+    description: "An intelligent basketball game analysis system that automatically tracks players and ball movements in real-time \
+    at 30+ FPS. Features advanced object detection with 94% accuracy, modular caching architecture, and comprehensive video annotation capabilities.",
+    technologies: ["Python", "pandas", "NumPy", "OpenCV", "Transformers", "Ultralytics"],
+    image: familytree
+  },
+  {
+    title: "Machine Learning Image Classification Software ",
+    description: "A scalable deep learning pipeline for image classification using transfer learning techniques. Incorporates automated data \
+    augmentation, hyperparameter optimization, and robust model versioning with comprehensive train/test/validation workflows.",
+    technologies: ["Python", "Tensorflow", "NumPy"],
+    image: sudoku
+  },
+  {
     title: "Portfolio Website",
     description: "A personal portfolio website showcasing projects, skills, and contact details. Features dynamic animations, modular components, \
     and a responsive design optimized for all devices.",
@@ -46,18 +61,6 @@ export const PROJECTS = [
     description: "A library management system handling inventory and checkout with seamless frontend-backend communication and a dynamic database of over 1,000 items.",
     technologies: ["JavaScript", "HTML", "CSS", "Python"],
     image: librarymanager
-  },
-  {
-    title: "Family Tree",
-    description: "A program for managing family trees using a balanced search tree. Supports adding/removing members and features versatile traversal algorithms.",
-    technologies: ["C++"],
-    image: familytree
-  },
-  {
-    title: "Sudoku",
-    description: "A Sudoku app with dynamic puzzle generation, difficulty levels, and robust solving algorithms, showcasing advanced backend development.",
-    technologies: ["Python"],
-    image: sudoku
   }
 ];
 
