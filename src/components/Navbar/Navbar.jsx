@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import navButtonClosed from '/assets/nav/navButtonClosed.png';
 import navButtonOpen from '/assets/nav/navButtonOpen.png';
+import resumePDF from '/assets/nav/Resume_Ethan_Chan.pdf';
 
 export const Navbar = () => { 
 
@@ -30,6 +31,12 @@ export const Navbar = () => {
             const target = event.target;
             const id = target.getAttribute("href")?.replace("#", "");
             const element = document.getElementById(id);
+
+            if (target.classList.contains('resume-link')) {
+              window.open(resumePDF, '_blank');
+              setMenuOpen(false);
+              return;
+            }
         
             if (element) {
               element.scrollIntoView({ behavior: "smooth" });
@@ -46,6 +53,9 @@ export const Navbar = () => {
         
             setMenuOpen(false);
           }}>
+          <li>
+            <a href="#" className="resume-link">Resume</a>
+          </li>
           <li>
             <a href = "#education">Education</a>
           </li>
